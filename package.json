@@ -13,10 +13,11 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.0.0",
     "koa": "^2.5.2",
-    "@nuxtjs/axios": "^5.0.0"
+    "mapbox-gl": "^0.52.0",
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.11.0",
