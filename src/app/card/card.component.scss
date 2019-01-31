@@ -1,0 +1,53 @@
+h1,h2,h3,h4,h5,h6{
+  // TODO: Move this to the body
+  font-family: helvetica, sans-serif;
+  font-weight: 500;
+  margin: 0;
+  word-break: break-word;
+
+  &:not(:last-child) {
+    margin: 0 0 1.5em 0;
+  }
+}
+.title {
+  color: #3e3e3e;
+
+  // TODO: Move this to the body
+  font-family: helvetica, sans-serif;
+
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.subtitle {
+  color: #9e9e9e;
+  font-family: helvetica, sans-serif;
+  font-size: 0.9em;
+  margin-top: -1.75em;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 3px rgba(12,12,12,0.15),0 0 0 1px rgba(12,12,12,0.15);
+  color: #4e4e4e;
+  margin: 0 auto 2.25em;
+  max-width: 100%;
+  position: relative;
+
+  &__content {
+    background-color: transparent;
+    padding: 1.5rem;
+  }
+
+  .picture {
+    overflow: hidden;
+
+    img {
+      border: 0;
+      display: block;
+      width: 100%;
+    }
+  }
+}

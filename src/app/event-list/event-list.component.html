@@ -1,6 +1,14 @@
-<h2>Event List</h2>
-<ul>
-  <li>Event 1</li>
-  <li>Event 2</li>
-  <li>Event 3</li>
-</ul>
+<div class="event-list">
+
+  <h2>{{ title }}</h2>
+  <code>TODO: Remove the title</code>
+  <hr>
+
+  <app-card *ngFor="let item of items"
+    [id]="item.id"
+    [title]="item.name"
+    [picture]="item.picture"
+    [date]="item.eventDate"
+    id=12></app-card>
+
+</div>
