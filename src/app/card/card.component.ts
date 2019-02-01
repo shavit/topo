@@ -7,12 +7,14 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  @Input() id: Number
-  @Input() title: String
-  @Input() picture: String
-  @Input() date: String
+  @Input() public id : Number;
+  @Input() public title : String;
+  @Input() public picture : String;
+  @Input() public date : String;
 
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() {
+  }
+
 }

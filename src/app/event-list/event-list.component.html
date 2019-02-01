@@ -2,13 +2,21 @@
 
   <h2>{{ title }}</h2>
   <code>TODO: Remove the title</code>
+
   <hr>
 
+  <div *ngIf="selectedItem">
+    <h2>{{selectedItem.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{selectedItem.id}}</div>
+    <input type="search" [(ngModel)]="selectedItem.name" placeholder="name">
+  </div>
+
   <app-card *ngFor="let item of items"
-    [id]="item.id"
-    [title]="item.name"
-    [picture]="item.picture"
-    [date]="item.eventDate"
-    id=12></app-card>
+  [id]="item.id"
+  [title]="item.name"
+  [picture]="item.picture"
+  [date]="item.eventDate"
+  (click)="onSelect(item)"
+    ></app-card>
 
 </div>

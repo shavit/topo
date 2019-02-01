@@ -1,11 +1,4 @@
-export class EventItem {
-  id : Number;
-  name : String;
-  picture : String;
-  eventDate : String;
-}
-
-export const MOCK_EVENT_ITEMS: EventItem[] = [
+export const MOCK_EVENT_ITEMS = [
   {
     id: 1,
     name: '7 Difficult Things About Cynthia Shields',
