@@ -12,12 +12,7 @@ export class CardComponent implements OnInit {
   @Input() picture: String
   @Input() date: String
 
-  constructor() {
-    this.id = 9999
-  }
+  constructor() { }
 
-  ngOnInit() {
-    this.id = 7
-  }
-
+  ngOnInit() { }
 }
