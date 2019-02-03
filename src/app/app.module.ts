@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { EventListComponent } from './event-list/event-list.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { EventListComponent } from './event-list/event-list.component';
     CardComponent,
     EventListComponent,
     CardComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
