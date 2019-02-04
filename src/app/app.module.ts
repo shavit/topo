@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { EventListComponent } from './event-list/event-list.component';
 import { FooterComponent } from './footer/footer.component';
+import { EventTableComponent } from './event-table/event-table.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
     EventListComponent,
     CardComponent,
     FooterComponent,
+    EventTableComponent,
   ],
   imports: [
     BrowserModule,
