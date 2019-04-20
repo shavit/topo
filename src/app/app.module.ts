@@ -8,6 +8,8 @@ import { CardComponent } from './card/card.component';
 import { EventListComponent } from './event-list/event-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { EventTableComponent } from './event-table/event-table.component';
+import { GraphQLModule } from './graphql.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { EventTableComponent } from './event-table/event-table.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    GraphQLModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
