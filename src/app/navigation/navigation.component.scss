@@ -1,0 +1,36 @@
+.page-header {
+  min-height: 4em;
+  margin: 0 auto;
+  max-width: 78em;
+
+  &__content {
+    background: #fff;
+    box-shadow: 0 0.12em 0.9em 0 rgba(0,0,0,0.24);
+
+    @media(min-width: 48em){
+      display: block;
+    }
+
+    ul {
+      display: flex;
+      padding: 0 0.9rem;
+      position: relative;
+
+      li {
+        display: flex;
+        min-width: 4rem;
+
+        a {
+          color: #161616;
+          display: block;
+          font-size: 1rem;
+          font-weight: bold;
+          line-height: 1.15rem;
+          min-width: 4rem;
+          padding: 1.25rem 1rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

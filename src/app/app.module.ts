@@ -10,6 +10,12 @@ import { FooterComponent } from './footer/footer.component';
 import { EventTableComponent } from './event-table/event-table.component';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
+import { EventItemComponent } from './event-item/event-item.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { AthletesComponent } from './athletes/athletes.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { RankingsComponent } from './rankings/rankings.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +25,12 @@ import { HttpClientModule } from '@angular/common/http';
     CardComponent,
     FooterComponent,
     EventTableComponent,
+    EventItemComponent,
+    NavigationComponent,
+    AthletesComponent,
+    CalendarComponent,
+    HomepageComponent,
+    RankingsComponent,
   ],
   imports: [
     BrowserModule,
