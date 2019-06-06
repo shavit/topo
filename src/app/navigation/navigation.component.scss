@@ -1,11 +1,40 @@
+.a-helper {
+
+  &--hidden{
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    font-size: 0.75rem;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+}
+
 .page-header {
   min-height: 4em;
   margin: 0 auto;
-  max-width: 78em;
+  position: absolute;
+  top: 2.75em;
+  width: 100%;
+  z-index: 990;
+
+  &.is-sticky {
+    position: fixed;
+    top: 0;
+
+    .page-header__content {
+      max-width: 100vw;
+    }
+  }
 
   &__content {
     background: #fff;
     box-shadow: 0 0.12em 0.9em 0 rgba(0,0,0,0.24);
+    margin: 0 auto;
+    max-width: 78em;
 
     @media(min-width: 48em){
       display: block;
@@ -13,6 +42,7 @@
 
     ul {
       display: flex;
+      margin: 0 auto;
       padding: 0 0.9rem;
       position: relative;
 
